@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; /* Espacio para la barra de navegación fija */
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #1e90ff, #ffffff); /* Degradado azul a blanco */
+  color: #333333; /* Texto oscuro para buen contraste */
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pokemon-card {
+  text-align: center;
+  border: 1px solid #ffd700; /* Borde color oro */
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #1e90ff; /* Texto azul */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #00ff7f; /* Fondo verde fosforito al pasar el mouse */
+  color: #ffffff; /* Texto blanco */
+}
+
+.pokemon-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.pokemon-details {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 1rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-details h1 {
+  color: #ffd700; /* Títulos en color oro */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e90ff; /* Azul */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ff7f; /* Verde fosforito al pasar el mouse */
+}
+.search-bar {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #1e90ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 8px #00ff7f; /* Resalta en verde fosforito */
+}
